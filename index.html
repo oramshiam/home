@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="column">
+        <div id="investing" style="width:50%">
+            <div class="column">
+                <iframe
+                src="https://sslecal2.investing.com?columns=exc_flags,exc_importance,exc_actual,exc_forecast,exc_previous&category=_employment,_economicActivity,_inflation,_credit,_centralBanks,_confidenceIndex,_balance,_Bonds&importance=3&features=datepicker,timeselector,filters&countries=5,4,72,35,37,11&calType=week&timeZone=88&lang=18"
+                width="70%" height="480" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+                <div style="width:30%">
+                    <div id="indices">
+                        <a href="https://www.cnbc.com/quotes/.IXIC" target="_blank">US Stock</a>
+                        <table border="1">
+                            <tr>
+                                <td>NASDAQ</td>
+                                <td id=".ixic-yield"></td>
+                                <td id=".ixic-change"></td>
+                                <td id=".ixic-updated"></td>
+                            </tr>
+                            <tr>
+                                <td>S&P 500</td>
+                                <td id=".spx-yield"></td>
+                                <td id=".spx-change"></td>
+                                <td id=".spx-updated"></td>
+                            </tr>
+                            <tr>
+                                <td>DJIA</td>
+                                <td id=".dji-yield"></td>
+                                <td id=".dji-change"></td>
+                                <td id=".dji-updated"></td>
+                            </tr>
+                        </table>
+                        <a href="https://www.cnbc.com/quotes/@ND.1" target="_blank">US Future</a>
+                        <table border="1">
+                            <tr>
+                                <td>NAS_F</td>
+                                <td id="@nd.1-yield"></td>
+                                <td id="@nd.1-change"></td>
+                                <td id="@nd.1-updated"></td>
+                            </tr>
+                            <tr>
+                                <td>S&P_F</td>
+                                <td id="@sp.1-yield"></td>
+                                <td id="@sp.1-change"></td>
+                                <td id="@sp.1-updated"></td>
+                            </tr>
+                            <tr>
+                                <td>DOW_F</td>
+                                <td id="@dj.1-yield"></td>
+                                <td id="@dj.1-change"></td>
+                                <td id="@dj.1-updated"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="treasury-yield">
+                        <a href="https://www.cnbc.com/quotes/US10Y" target="_blank">US Treasury</a>
+                        <table border="1">
+                            <tr>
+                                <td>US10Y</td>
+                                <td id="us10y-yield"></td>
+                                <td id="us10y-change"></td>
+                                <td id="us10y-updated"></td>
+                            </tr>
+                            <tr>
+                                <td>US2Y</td>
+                                <td id="us2y-yield"></td>
+                                <td id="us2y-change"></td>
+                                <td id="us2y-updated"></td>
+                            </tr>
+                            <tr>
+                                <td>US3M</td>
+                                <td id="us3m-yield"></td>
+                                <td id="us3m-change"></td>
+                                <td id="us3m-updated"></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <iframe height="200" width="95%"
+                    src="https://sslcharts.investing.com/index.php?force_lang=18&pair_ID=650&timescale=86400&candles=1000&style=line"></iframe>
+                </div>
+            </div>
+        </div>
+        <div style="width:50%">
+            <div id="shortcut" style="margin-bottom: 30px;">
+                <a href="https://www.cnbc.com/world/" target="_blank" rel="noreferrer noopener">
+                    <img src="./img/cnbc.png">
+                </a>
+                <a href="https://edition.cnn.com/business" target="_blank" rel="noreferrer noopener">
+                    <img src="./img/CNN.png">
+                </a>
+                <a href="https://finance.yahoo.com/" target="_blank" rel="noreferrer noopener">
+                    <img src="./img/yahoofinance.png">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener">
+                    <img src="./img/youtube.png">
+                </a>
+                <a href="https://music.youtube.com/" target="_blank" rel="noreferrer noopener">
+                    <img src="./img/music.png">
+                </a>
+                <a href="https://www.netflix.com/browse" target="_blank" rel="noreferrer noopener">
+                    <img src="./img/netflix.png">
+                </a>
+                <a href="https://drive.google.com/" target="_blank" rel="noreferrer noopener">
+                    <img src="./img/drive.png">
+                </a>
+                <a href="https://mail.naver.com/" target="_blank" rel="noreferrer noopener">
+                    <img src="./img/mail.png">
+                </a>
+                <a href="https://onedrive.live.com/" target="_blank" rel="noreferrer noopener">
+                    <img src="./img/onedrive.png">
+                </a>
+
+            </div>
+            <div class="column">
+                <div style="width:30%; padding-right: 6px" >
+                    <div id="stockPrice">
+                        <form id="watch-form" style="padding-bottom: 5px;">
+                            <input type="text" required placeholder="Watch List">
+                        </form>
+                        <div class="column">
+                            <table id="priceTable" border="1"></table>
+                            <ul id="watch-list"></ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="width:40%">
+                    <form id="naver-search" style="padding-bottom: 10px;">
+                        <input type="text" required placeholder="Naver Search">
+                    </form>
+                    <form id="todo-form">
+                        <input type="text" required placeholder="What to do?">
+                    </form>
+                    <ul id="todo-list"></ul>
+                </div>
+                <div id="music-div" style="width:30%; padding-right: 6px">
+                    <form id="music-link" style="padding-bottom: 10px;">
+                        <input type="text" required placeholder="link">
+                    </form>
+                    <ul id="music-list"></ul>
+                    <iframe id="youtube" width=100% src="" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+                    scrolling="yes" align="right"> iframe이 있어던 자리 입니다 </iframe>
+                </div>
+            </div>
+            <div id="quiz" style="width:100%; padding-left: 10px; padding-top: 30px;">
+                <h2 style="display: inline;">Radiology Quiz : </h2>
+                <a href="https://www.ultrasound.or.kr/case/index.php?" target="_blank" rel="noreferrer noopener" class="button-link">
+                    US
+                </a>
+                <a href="https://kstr.radiology.or.kr/weekly/" target="_blank" rel="noreferrer noopener" class="button-link">
+                    CHT
+                </a>
+                <a href="https://ksnr.org/03_case/case01.html" target="_blank" rel="noreferrer noopener" class="button-link">
+                    NEU
+                </a>
+                <a href="https://www.ksar.kr/symposium/case_list.php?cgubun=2&maing=quize&subg=sub2" target="_blank" rel="noreferrer noopener" class="button-link">
+                    ABD
+                </a>
+                <a href="https://www.kspr.kr/e_learning/index.html?subid=1&cgubun=2" target="_blank" rel="noreferrer noopener" class="button-link">
+                    PED
+                </a>
+                <a href="https://www.ksur.kr/cases/index.kin?gubun=1&sgubun=1" target="_blank" rel="noreferrer noopener" class="button-link">
+                    GU
+                </a>
+                <a href="https://www.kosci.co.kr/join/login?login_url=%2Facademic%2Fcases" target="_blank" rel="noreferrer noopener" class="button-link">
+                    CV
+                </a>
+                <a href="http://ksmr.radiology.or.kr/case/index.kin?gubun=1" target="_blank" rel="noreferrer noopener" class="button-link">
+                    MSK
+                </a>
+                <a href="https://ksbi.radiology.or.kr/index.htm" target="_blank" rel="noreferrer noopener" class="button-link">
+                    BR
+                </a>
+
+
+            </div>
+            <div id="quiz-answer">
+                <iframe width="930" height="500" frameborder="0" scrolling="no" 
+                src="https://onedrive.live.com/embed?resid=7B82D51972060C8E%216223&authkey=%21AAQoJ5JGTTL5fac&em=2&AllowTyping=True&Item='Sheet1'!A%3AD&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/todo.js"></script>
+    <script src="js/naverSearch.js"></script>
+    <script src="js/fredAPI.js"></script>
+    <script src="js/cnbc.js"></script>
+    <script src="js/stockWatch.js"></script>
+    <script src="js/youtube.js"></script>
+</body>
+</html>
+
+
+
+
+
