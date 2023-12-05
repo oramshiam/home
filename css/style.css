@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(52, 52, 53);
+    color: white;
+}
+
+h1 {
+    color: coral;
+    transition:color .5s ease-in-out;
+}
+
+.active {
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color: white;
+}
+
+img {
+    max-width: 48vw;
+    max-height: 100vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+}
+
+.time-range {
+    width: 50%;
+}
+
+#indices .plus {
+    color: rgb(2, 177, 2)
+}
+
+#indices .minus {
+    color: red
+}
+
+#indices .updated {
+    color: yellow
+}
+
+#stockPrice .plus {
+    color: rgb(2, 177, 2)
+}
+
+#stockPrice .minus {
+    color: red
+}
+
+#stockPrice .updated {
+    color: yellow
+}
+
+#treasury-yield .minus {
+    color: rgb(2, 177, 2)
+}
+
+#treasury-yield .plus {
+    color: red
+}
+
+#treasury-yield .updated {
+    color: yellow
+}
+
+table {
+    font-size: 0.75em;
+    border: 1px;
+}
+
+#shortcut a img { 
+    height: 46px;
+}
+
+div {
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+input {
+    width: 100%;
+    line-height:20px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.button-link:hover {
+    background-color: #45a049;
+}
+
+#watch-list span{
+    display: none;
+}
+
+#watch-list {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+#priceTable tr{
+    height: 10px;
+}
+
+#music-list{
+    display: none;
+}
