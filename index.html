@@ -13,7 +13,7 @@
             <div class="column">
                 <iframe
                 src="https://sslecal2.investing.com?columns=exc_flags,exc_importance,exc_actual,exc_forecast,exc_previous&category=_employment,_economicActivity,_inflation,_credit,_centralBanks,_confidenceIndex,_balance,_Bonds&importance=3&features=datepicker,timeselector,filters&countries=5,4,72,35,37,11&calType=week&timeZone=88&lang=18"
-                width="70%" height="480" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+                width="70%" height="510" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
                 <div style="width:30%">
                     <div id="indices">
                         <a href="https://www.cnbc.com/quotes/.IXIC" target="_blank">US Stock</a>
@@ -82,11 +82,23 @@
                             </tr>
                         </table>
                     </div>
+                    <div id="indices">
+                        <table border="1">
+                            <tr>
+                                <td><a href="https://www.cnbc.com/quotes/BTC.CB=" target="_blank">Bitcoin</a></td>
+                                <td id="btc.cb=-yield"></td>
+                                <td id="btc.cb=-change"></td>
+                                <td id="btc.cb=-updated"></td>
+                            </tr>
+                        </table>
+                    </div>
 
                     <iframe height="200" width="95%"
                     src="https://sslcharts.investing.com/index.php?force_lang=18&pair_ID=650&timescale=86400&candles=1000&style=line"></iframe>
                 </div>
             </div>
+            <div id="fred_chart"></div>
+            <iframe id="corsframe" src="https://cors-anywhere.herokuapp.com/corsdemo" width="600px" height="170px"></iframe>
         </div>
         <div style="width:50%">
             <div id="shortcut" style="margin-bottom: 30px;">
@@ -116,6 +128,12 @@
                 </a>
                 <a href="https://onedrive.live.com/" target="_blank" rel="noreferrer noopener">
                     <img src="./img/onedrive.png">
+                </a>
+                <a href="https://chat.openai.com/" target="_blank" rel="noreferrer noopener">
+                    <img src="./img/chatGPT.png">
+                </a>
+                <a href="https://www.bing.com/chat" target="_blank" rel="noreferrer noopener">
+                    <img src="./img/copilot.png">
                 </a>
 
             </div>
@@ -152,6 +170,9 @@
                     scrolling="yes" align="right"> iframe이 있어던 자리 입니다 </iframe>
                 </div>
             </div>
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FSeoul&bgcolor=%23ffffff&showTitle=0&showPrint=0&showTabs=0&showTz=0&src=Z2hsZWUxMjI5QGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZmFtaWx5MDkzMjk1MjEzMDM2MjczNzg1MDZAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=a28uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB&color=%2333B679&color=%239E69AF&color=%230B8043" 
+            style="border:solid 1px #777" width="930" height="600" frameborder="0" scrolling="no">
+            </iframe>
             <div id="quiz" style="width:100%; padding-left: 10px; padding-top: 30px;">
                 <h2 style="display: inline;">Radiology Quiz : </h2>
                 <a href="https://www.ultrasound.or.kr/case/index.php?" target="_blank" rel="noreferrer noopener" class="button-link">
@@ -185,9 +206,12 @@
 
             </div>
             <div id="quiz-answer">
-                <iframe width="930" height="500" frameborder="0" scrolling="no" 
-                src="https://onedrive.live.com/embed?resid=7B82D51972060C8E%216223&authkey=%21AAQoJ5JGTTL5fac&em=2&AllowTyping=True&Item='Sheet1'!A%3AD&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True">
-                </iframe>
+                <a href="https://docs.google.com/spreadsheets/d/1Ndo5FAlR3vdp7fjDjD4-ArhLf4MqRN8Jvdlcb3tOsVU/edit?gid=0#gid=0" target="_blank" rel="noreferrer noopener">
+                    Quiz Answer
+                    <iframe width="930" height="500" 
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQyNb9qJD7cgXX4bfhn5bAi3zvB_M_nccn7Op9dNdKZ0Mq6d0a6o6-Kds1yX9bBkwv4wD9tY0b8gKmE/pubhtml?widget=true&amp;headers=false">
+                    </iframe>
+                </a>
             </div>
 
         </div>
@@ -195,13 +219,8 @@
     <script src="js/todo.js"></script>
     <script src="js/naverSearch.js"></script>
     <script src="js/fredAPI.js"></script>
-    <script src="js/cnbc3.js"></script>
+    <script src="js/cnbc4.js"></script>
     <script src="js/stockWatch3.js"></script>
     <script src="js/youtube.js"></script>
 </body>
 </html>
-
-
-
-
-
